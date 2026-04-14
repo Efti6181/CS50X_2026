@@ -63,12 +63,33 @@ A web-based application that demonstrates how deadlocks occur in operating syste
 - Detects deadlocks using DFS cycle detection  
 - Provides safe execution sequence when no deadlock is present  
 - Interactive graph visualization of processes and resources  
-- Stores data using SQLite  
+- Stores data using SQLite
+
+  
+## 🎥 Project Demo
+
+A video demonstration of the final project is available on YouTube:
+
+👉 **YouTube Demo:** https://youtu.be/W4eCUt1S724?si=AzlMSO3yi_3WMQXp
 
 
 
 ## 🌍 Learning Experience
 
 This course has significantly improved my problem-solving skills and strengthened my understanding of core computer science concepts. It also gave me hands-on experience in building real-world applications and working across multiple programming languages.
+
+## 📜 License
+
+This project is licensed under the ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)  
+
+
+
+## 👨‍💻 Author
+
+**Najmul Alam Efti**
+
+🎓 Premier University, Chittagong
+
+📧 \[najmul27alam@gmail.com]
 
 
