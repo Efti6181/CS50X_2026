@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deadlock Simulator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<h1>Deadlock Detection Simulator</h1>
+<form method="post">
+<p>Enter edges (Process -> Resource)</p>
+<textarea name="edges" placeholder="Example:
+P1 -> R1
+R1 -> P2
+P2 -> R2
+R2 -> P1"></textarea>
+<br><br>
+<button type="submit">Detect Deadlock</button>
+</form>
+<br>
+<a href="/saved">View Saved Graph</a>
+{% if result %}
+<div class="result">
+    {{ result }}
+</div>
+{% endif %}
+{% if safe_order %}
+<div class="result">
+    <strong>Safe Execution Sequence:</strong>
+    {{ safe_order|join(' → ') }}
+</div>
+{% endif %}
+</body>
+</html>
