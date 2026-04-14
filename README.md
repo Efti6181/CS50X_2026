@@ -1,6 +1,6 @@
 # 🎓 CS50x – Introduction to Computer Science (Harvard University)
 
-This repository contains my complete coursework, projects, and final project for **CS50x: Introduction to Computer Science**, offered by Harvard University.
+This repository contains my complete coursework, and final project for **CS50x: Introduction to Computer Science**, offered by Harvard University.
 
 ---
 
