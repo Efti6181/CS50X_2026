@@ -1,0 +1,15 @@
+HTML tags used:
+h1, h2, p, a, nav, img, ul, li, button, input, div
+
+CSS properties used:
+color
+background-color
+margin
+padding
+font-size
+
+Bootstrap used:
+navbar and button class
+
+JavaScript used:
+alert when clicking button

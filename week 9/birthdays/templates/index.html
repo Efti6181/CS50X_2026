@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Birthdays</title>
+    <link href="/static/styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Birthdays</h1>
+    <form action="/" method="post">
+        <input name="name" placeholder="Name">
+        <input name="month" placeholder="Month">
+        <input name="day" placeholder="Day">
+        <button type="submit">Add Birthday</button>
+    </form>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Birthday</th>
+        </tr>
+        {% for b in birthdays %}
+        <tr>
+            <td>{{ b.name }}</td>
+            <td>{{ b.month }}/{{ b.day }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+
+</html>

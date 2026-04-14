@@ -1,0 +1,21 @@
+body {
+    background-color: #f2f2f2;
+}
+
+h1 {
+    color: blue;
+}
+
+nav {
+    background: black;
+    padding: 10px;
+}
+
+a {
+    color: white;
+    margin: 10px;
+}
+
+.container {
+    margin: 20px;
+}

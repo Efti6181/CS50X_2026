@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Trivia</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let correct = document.querySelector("#correct");
+            correct.addEventListener("click", function () {
+                correct.style.backgroundColor = "green";
+                document.querySelector("#result1").innerHTML = "Correct!";
+            });
+            let wrongs = document.querySelectorAll(".wrong");
+            for (let i = 0; i < wrongs.length; i++) {
+                wrongs[i].addEventListener("click", function () {
+                    wrongs[i].style.backgroundColor = "red";
+                    document.querySelector("#result1").innerHTML = "Incorrect";
+                });
+            }
+            document.querySelector("#check").addEventListener("click", function () {
+                let input = document.querySelector("#answer");
+                if (input.value.toLowerCase() === "dhaka") {
+                    input.style.backgroundColor = "green";
+                    document.querySelector("#result2").innerHTML = "Correct!";
+                }
+                else {
+                    input.style.backgroundColor = "red";
+                    document.querySelector("#result2").innerHTML = "Incorrect";
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Trivia Quiz</h1>
+    <h2>Part 1: Multiple Choice</h2>
+    <h3>What is the capital of Bangladesh?</h3>
+    <button class="wrong">Chittagong</button>
+    <button class="wrong">Sylhet</button>
+    <button id="correct">Dhaka</button>
+    <button class="wrong">Khulna</button>
+    <p id="result1"></p>
+    <h2>Part 2: Free Response</h2>
+    <h3>Which country is known as the Land of the Rising Sun?</h3>
+    <input type="text" id="answer">
+    <button id="check">Check Answer</button>
+    <p id="result2"></p>
+</body>
+</html>

@@ -1,0 +1,29 @@
+1. Characterizing the audio aura of a listener
+
+Based on the top 100 songs’ data (energy, danceability, valence), we can estimate the listener’s overall mood or “audio aura.”
+
+High energy & danceability: The listener prefers upbeat, active songs.
+
+High valence: The listener enjoys happy, positive songs.
+
+Low energy or valence: The listener prefers calm, mellow, or sad songs.
+
+2. Why this calculation might not be representative
+
+Using only the top 100 songs from a single year may not fully represent the listener’s music taste because:
+
+They may listen to many songs outside of these 100.
+
+Play counts may be skewed by playlists or a few repeated songs.
+
+Different genres or moods might not be reflected accurately in averages.
+
+3. Better ways to calculate the audio aura
+
+Use all songs listened to during the year, not just top 100.
+
+Weight songs by play count to better reflect actual listening habits.
+
+Consider genre and context to capture emotional variety.
+
+Track changes over time to see mood evolution rather than a single static snapshot.
