@@ -1,0 +1,8 @@
+sort1 uses: Bubble sort
+Explanation: sort1 becomes much faster when the list is already sorted, which is a property of bubble sort because it stops early when no swaps are needed.
+
+sort2 uses: Merge sort
+Explanation: sort2 runs fast even for very large lists and its running time stays almost the same for different inputs, which is a property of merge sort (O(n log n)).
+
+sort3 uses: Selection sort
+Explanation: sort3 always takes about the same time even if the list is already sorted, which is a property of selection sort because it always scans the whole list.
